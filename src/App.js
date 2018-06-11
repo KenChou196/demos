@@ -1,34 +1,38 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Section from './component/section.js';
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      test: 'adfkajkdjakf'
+    }
+  }
   render() {
     return (
       <div className="App">
-
-
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div className="container">
-            <a className="navbar-brand" href="">Start Bootstrap</a>
+            <a className="navbar-brand" href="">{this.state.test}</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">Home
+                  <a className="nav-link" href="">Home
                     <span className="sr-only">(current)</span>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">About</a>
+                  <a className="nav-link" href="">About</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Services</a>
+                  <a className="nav-link" href="">Services</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Contact</a>
+                  <a className="nav-link" href="">Contact</a>
                 </li>
               </ul>
             </div>
@@ -44,9 +48,9 @@ class App extends Component {
 
               <h1 className="my-4">Shop Name</h1>
               <div className="list-group">
-                <a href="#" className="list-group-item">Category 1</a>
-                <a href="#" className="list-group-item">Category 2</a>
-                <a href="#" className="list-group-item">Category 3</a>
+                <a href="" className="list-group-item">Category 1</a>
+                <a href="" className="list-group-item">Category 2</a>
+                <a href="" className="list-group-item">Category 3</a>
               </div>
 
             </div>
@@ -79,111 +83,10 @@ class App extends Component {
                   <span className="sr-only">Next</span>
                 </a>
               </div>
-
-              <div className="row">
-
-                <div className="col-lg-4 col-md-6 mb-4">
-                  <div className="card h-100">
-                    <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt=""/></a>
-                    <div className="card-body">
-                      <h4 className="card-title">
-                        <a href="#">Item One</a>
-                      </h4>
-                      <h5>$24.99</h5>
-                      <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                    </div>
-                    <div className="card-footer">
-                      <small className="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 mb-4">
-                  <div className="card h-100">
-                    <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt=""/></a>
-                    <div className="card-body">
-                      <h4 className="card-title">
-                        <a href="#">Item Two</a>
-                      </h4>
-                      <h5>$24.99</h5>
-                      <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div className="card-footer">
-                      <small className="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 mb-4">
-                  <div className="card h-100">
-                    <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt=""/></a>
-                    <div className="card-body">
-                      <h4 className="card-title">
-                        <a href="#">Item Three</a>
-                      </h4>
-                      <h5>$24.99</h5>
-                      <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                    </div>
-                    <div className="card-footer">
-                      <small className="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 mb-4">
-                  <div className="card h-100">
-                    <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt=""/></a>
-                    <div className="card-body">
-                      <h4 className="card-title">
-                        <a href="#">Item Four</a>
-                      </h4>
-                      <h5>$24.99</h5>
-                      <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                    </div>
-                    <div className="card-footer">
-                      <small className="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 mb-4">
-                  <div className="card h-100">
-                    <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt=""/></a>
-                    <div className="card-body">
-                      <h4 className="card-title">
-                        <a href="#">Item Five</a>
-                      </h4>
-                      <h5>$24.99</h5>
-                      <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div className="card-footer">
-                      <small className="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 mb-4">
-                  <div className="card h-100">
-                    <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt=""/></a>
-                    <div className="card-body">
-                      <h4 className="card-title">
-                        <a href="#">Item Six</a>
-                      </h4>
-                      <h5>$24.99</h5>
-                      <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                    </div>
-                    <div className="card-footer">
-                      <small className="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
+              <Section />
             </div>
 
-
+          
           </div>
 
         </div>
