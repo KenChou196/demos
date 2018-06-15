@@ -12,6 +12,10 @@ class Section extends Component {
                 { id: 5, url: 'http://placehold.it/700x400', title: 'item title', price: '90 usd', detail: 'Lorem ipsum ' },
                 { id: 6, url: 'http://placehold.it/700x400', title: 'item title', price: '90 usd', detail: 'Lorem ipsum ' },
                 { id: 7, url: 'http://placehold.it/700x400', title: 'item title', price: '90 usd', detail: 'Lorem ipsum ' },
+                { id: 8, url: 'http://placehold.it/700x400', title: 'item title', price: '90 usd', detail: 'Lorem ipsum ' },
+                { id: 9, url: 'http://placehold.it/700x400', title: 'item title', price: '90 usd', detail: 'Lorem ipsum ' },
+                { id: 10, url: 'http://placehold.it/700x400', title: 'item title', price: '90 usd', detail: 'Lorem ipsum ' },
+                { id: 11, url: 'http://placehold.it/700x400', title: 'item title', price: '90 usd', detail: 'Lorem ipsum ' },
             ]
         }
     }
@@ -38,18 +42,20 @@ class Section extends Component {
             // </div>
             <div className="row">
                 {this.state.data.map(data => (
-                    <div className="col-lg-2 col-md-2 card card-1" key={data.id}>
-                        <div className="">
-                            <a href="">img here</a>
+                    <div className="col-lg-2 col-md-2" key={data.id}>
+                        <div className="card card-1">
                             <div className="">
-                                <h4 className="">
-                                    <a href="">{data.title}</a>
-                                </h4>
-                                <h5>{data.price}</h5>
-                                <p className="">{data.detail}</p>
-                            </div>
-                            <div className="">
-                                <small className="">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                <a href="">img here</a>
+                                <div className="">
+                                    <h4 className="">
+                                        <a href="">{data.title}</a>
+                                    </h4>
+                                    <h5>{data.price}</h5>
+                                    <p className="">{data.detail}</p>
+                                </div>
+                                <div className="">
+                                    <small className="">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                </div>
                             </div>
                         </div>
                     </div>

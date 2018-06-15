@@ -9,10 +9,10 @@ body {
     background: #fff;
     border-radius: 2px;
     display: inline-block;
-    height: 300px;
-    margin: 1rem;
+    height: 200px;
     position: relative;
-    width: 300px;
+    width: 170px;
+    margin-bottom: 15px;
 }
   
 .card-1 {

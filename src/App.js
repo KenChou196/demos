@@ -3,7 +3,7 @@ import Section from './component/section.js';
 import './App.css';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       test: 'adfkajkdjakf'
@@ -71,7 +71,7 @@ class App extends Component {
                     <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide" />
                   </div>
                   <div className="carousel-item">
-                    <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide"/>
+                    <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide" />
                   </div>
                 </div>
                 <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -83,11 +83,13 @@ class App extends Component {
                   <span className="sr-only">Next</span>
                 </a>
               </div>
-              
+
             </div>
 
-          
+
           </div>
+
+          <h4> ------ Sản phẩm nổi bật, khách hàng ưa thích ------ </h4>
           <Section />
         </div>
 
