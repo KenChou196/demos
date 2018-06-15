@@ -83,12 +83,12 @@ class App extends Component {
                   <span className="sr-only">Next</span>
                 </a>
               </div>
-              <Section />
+              
             </div>
 
           
           </div>
-
+          <Section />
         </div>
 
         <footer className="py-5 bg-dark">
