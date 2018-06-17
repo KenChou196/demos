@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import Section from './component/section.js';
+import Header from './component/header.js';
+import Slider from './component/slider.js';
+import ProductList from './component/product.js';
+import LeftBar from './component/leftBar.js';
+import Footer from './component/footer.js';
 import './App.css';
+
 
 class App extends Component {
   constructor(props) {
@@ -12,105 +17,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div className="container">
-            <a className="navbar-brand" href="">{this.state.test}</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarResponsive">
-              <ul className="navbar-nav ml-auto">
-                <li className="nav-item active">
-                  <a className="nav-link" href="">Home
-                    <span className="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="">About</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="">Services</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-
+        <Header />
+        <Slider />
         <div className="container">
-
-          <div className="row">
-
-            <div className="col-lg-3">
-
-              <h1 className="my-4">Shop Name</h1>
-              <div className="list-group">
-                <a href="" className="list-group-item">Category 1</a>
-                <a href="" className="list-group-item">Category 2</a>
-                <a href="" className="list-group-item">Category 3</a>
-              </div>
-
-            </div>
-
-            <div className="col-lg-9">
-
-              <div id="carouselExampleIndicators" className="carousel slide my-4" data-ride="carousel">
-                <ol className="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div className="carousel-inner" role="listbox">
-                  <div className="carousel-item active">
-                    <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide" />
-                  </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="sr-only">Next</span>
-                </a>
-              </div>
-
-            </div>
-            </div>
-              <h4 className="titleSection"> ------ Sản phẩm nổi bật, khách hàng ưa thích ------ </h4>
-              <div className="borderSection">
-                  <Section />
-              </div>
-              <h4 className="titleSection"> ------ Sản phẩm nổi bật, khách hàng ưa thích ------ </h4>
-              <div className="borderSection">
-                  <Section />
-              </div>
-              <h4 className="titleSection"> ------ Sản phẩm nổi bật, khách hàng ưa thích ------ </h4>
-              <div className="borderSection">
-                  <Section />
-              </div>
-              <h4 className="titleSection"> ------ Sản phẩm nổi bật, khách hàng ưa thích ------ </h4>
-              <div className="borderSection">
-                  <Section />
-              </div>
-
-          </div>
-      
-        
-        <footer className="py-5 bg-dark">
-          <div className="container">
-            <p className="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-          </div>
-        </footer>
+          <LeftBar />
+          <ProductList />
+        </div>
+          <Footer />
+        <div id="myModal" className="modal">
+          <span className="close">&times;</span>
+          <img className="modal-content" id="img01" alt=""/>
+          <div id="caption"></div>
+        </div>
       </div>
     );
   }
