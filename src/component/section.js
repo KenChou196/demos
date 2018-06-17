@@ -42,7 +42,7 @@ class Section extends Component {
             // </div>
             <div className="row">
                 {this.state.data.map(data => (
-                    <div className="col-lg-2 col-md-2" key={data.id}>
+                    <div className="col-lg-2 col-md-2 fixCard" key={data.id}>
                         <div className="card card-1">
                             <div className="">
                                 <a href="">img here</a>
