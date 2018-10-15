@@ -1,108 +1,98 @@
 import React, { Component } from 'react';
 
+export default class Header extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <div>
+                <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
+                    <div className='container'>
+                        <div className='navbar-header'>
+                            <button type='button' className='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
+                                <span className='sr-only'>Toggle navigation</span> <span className='icon-bar'></span> <span className='icon-bar'></span>
+                                <span className='icon-bar'></span> </button>
+                            <img id='logo' src='/img/logo.png' alt='' />
+                            <a className='navbar-brand page-scroll' href='#page-top'><span>V</span>IET HAI CONTRUCTIONS</a> </div>
 
-class Header extends Component {
-    render(){
-        return(
-            <header id="header">
+                        <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+                            <ul className='nav navbar-nav navbar-right'>
+                                <li><a href='#about' className='page-scroll'>Giới thiệu</a></li>
+                                <li><a href='#services' className='page-scroll'>Dịch Vụ</a></li>
+                                <li><a href='#portfolio' className='page-scroll'>Các dự án</a></li>
+                                <li><a href='#team' className='page-scroll'>Sản Phẩm<menu></menu></a></li>
+                                <li><a href='#contact' className='page-scroll'>Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <header id='header'>
+                    <div className='Modern-Slider'>
+                        <div className='item'>
+                            <div className='img-fill'>
+                                <img src='/img/slider5.jpeg' alt='' />
+                                <div className='info'>
+                                    <div>
+                                        <h3>THI CÔNG CHẤT</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='item'>
+                            <div className='img-fill'>
+                                <img src='/img/slider4.jpg' alt='' />
+                                <div className='info'>
+                                    <div>
+                                        <h3>CHUYÊN NGHIỆP</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='item'>
+                            <div className='img-fill'>
+                                <img src='/img/slider3.jpg' alt='' />
+                                <div className='info'>
+                                    <div>
+                                        <h3>THÁI ĐỘ PHỤC VỤ TỐT</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='item'>
+                            <div className='img-fill'>
+                                <img src='/img/slider2.jpg' alt='' />
+                                <div className='info'>
+                                    <div>
+                                        <h3>THI CÔNG CHẤT</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='item'>
+                            <div className='img-fill'>
+                                <img src='/img/slider1.jpg' alt='' />
+                                <div className='info'>
+                                    <div>
+                                        <h3>CHUYÊN NGHIỆP</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='item'>
+                            <div className='img-fill'>
+                                <img src='/img/slider1.jpg' alt='' />
+                                <div className='info'>
+                                    <div>
+                                        <h3>THÁI ĐỘ PHỤC VỤ TỐT</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
 
-                <div className="header_top">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <div className="contactinfo">
-                                    <ul className="nav nav-pills">
-                                        <li><a href=""><i className="fa fa-phone"></i> +84 973 48 15 56</a></li>
-                                        <li><a href=""><i className="fa fa-envelope"></i> Mr.Quang@viethai.com</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-sm-6">
-                                <div className="social-icons pull-right">
-                                    <ul className="nav navbar-nav">
-                                        <li><a href=""><i className="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i className="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i className="fa fa-linkedin"></i></a></li>
-                                        <li><a href=""><i className="fa fa-dribbble"></i></a></li>
-                                        <li><a href=""><i className="fa fa-google-plus"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div className="header-middle">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <div className="">
-                                    <a href="index.html"><img id ="logo" src="./img/logo.png" alt="" /></a>
-                                    <h1 className="slogan">Công ty TNHH Việt Hải </h1>
-                                    <h4 className="desc"> Chuyên thiết kế, thi công xây dựng, trang trí nội thất </h4>
-                                </div>
-                            </div>
-                            <div className="col-sm-6">
-                                <div className="shop-menu pull-right">
-                                    <ul className="nav navbar-nav">
-                                        <li><a href=""><i className="fa fa-user"></i> Tài khoản</a></li>
-                                        <li><a href=""><i className="fa fa-star"></i> Ưa thích</a></li>
-                                        <li><a href=""><i className="fa fa-crosshairs"></i> Kiểm tra</a></li>
-                                        <li><a href=""><i className="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                                        <li><a href=""><i className="fa fa-lock"></i> Đăng nhập</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div className="header-bottom">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-sm-9">
-                                <div className="navbar-header">
-                                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span className="sr-only">Toggle navigation</span>
-                                        <span className="icon-bar"></span>
-                                        <span className="icon-bar"></span>
-                                        <span className="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div className="mainmenu pull-left">
-                                    <ul className="nav navbar-nav collapse navbar-collapse">
-                                        <li><a href="index.html" className="active">Trang Chủ</a></li>
-                                        <li className="dropdown"><a href="">Cửa Hàng<i className="fa fa-angle-down"></i></a>
-                                            <ul role="menu" className="sub-menu">
-                                                <li><a href="">Sản Phẩm</a></li>
-                                                <li><a href="">Chi tiết sản phẩm</a></li> 
-                                                <li><a href="">Kiểm tra đơn hàng</a></li> 
-                                                <li><a href="">Giỏ hàng</a></li> 
-                                                <li><a href="">Đăng nhập</a></li> 
-                                            </ul>
-                                        </li> 
-                                        <li className="dropdown"><a href="">Tin tức<i className="fa fa-angle-down"></i></a>
-                                            <ul role="menu" className="sub-menu">
-                                                <li><a href="">Danh sách tin tức</a></li>
-                                                <li><a href="">Tin đơn</a></li>
-                                            </ul>
-                                        </li> 
-                                        <li><a href="contact-us.html">Liên hệ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-sm-3">
-                                <div className="search_box pull-right">
-                                    <input type="text" placeholder="Tìm kiếm"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </header>
         )
     }
 }
-
-export default Header;

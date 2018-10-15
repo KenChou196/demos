@@ -1,61 +1,64 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-class Footer extends Component {
+
+export default class Portfolio extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            dataImage: [
+                { src: "img/product1.jpeg", alt: "Project Title", ProjectName: 'Project Name1' },
+                { src: "img/product2.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product3.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product4.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product5.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product6.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product7.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product8.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product9.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product10.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product11.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product12.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product13.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product13.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product16.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product17.jpeg", alt: "Project Title", ProjectName: 'Project Name2' },
+                { src: "img/product18.jpeg", alt: "Project Title", ProjectName: 'Project Name2' }
+            ]
+        }
+    }
+    portfolioItem() {
+        return this.state.dataImage.map((value, index) => {
+            console.log('value is =========> ', value)
+            return (
+                <div className="col-sm-6 col-md-4 col-lg-4 residential" key={index}>
+                    <div className="portfolio-item">
+                        <div className="hover-bg"> <a href={`${value.src}`} title={value.alt} data-lightbox-gallery="gallery1">
+                            <div className="hover-text">
+                                <h4>{value.ProjectName}</h4>
+                            </div>
+                            <img src={`${value.src}`} className="img-responsive" alt={value.alt} /> </a> </div>
+                    </div>
+                </div>
+            )
+        })
+    }
     render() {
-        return(
-            <footer id="footer">
-		
-            <div className="footer-widget">
-
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-2">
-                            <div className="companyinfo">
-                                <a href="index.html"><img id ="logoFooter" src="img/logo.png" alt="" /></a>
-                            </div>
-                        </div>
-                        <div className="col-sm-2">
-                            <div className="single-widget">
-                                <h2>Dịch vụ</h2>
-                                <ul className="nav nav-pills nav-stacked">
-                                    <li><a href="">Tư vấn trực tuyến</a></li>
-                                    <li><a href="">Liên hệ</a></li>
-                                    <li><a href="">Trạng thái đơn hàng</a></li>
-                                    <li><a href="">Đổi địa điểm</a></li>
-                                    <li><a href="">FAQ’s</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-sm-3 col-sm-offset-1">
-                            <div className="single-widget">
-                                <h2>Viet Hai Contruction</h2>
-                                <form action="#" className="searchform">
-                                    <input type="text" placeholder="Your email address" />
-                                    <button type="submit" className="btn btn-default"><i className="fa fa-arrow-circle-o-right"></i></button>
-                                    <p>Hãy để lại Email <br />chúng tôi sẽ liên hệ với bạn sớm nhất có thể</p>
-                                </form>
-                            </div>
-                        </div>
-                        <div className="col-sm-4">
-                            <div className="address">
-                                <img src="img/map.png" alt="" />
-                            </div>
-                        </div>
+        return (
+            <div id="footer">
+                <div className="container text-center">
+                    <div className="social">
+                        <ul>
+                            <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i className="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i className="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i className="fa fa-pinterest"></i></a></li>
+                            <li><a href=""><i className="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
                     </div>
                 </div>
             </div>
-            
-            <div className="footer-bottom">
-                <div className="container">
-                    <div className="row">
-                        <p className="pull-left">Copyright © 2018 Viet Hai Contruction . All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
         )
     }
 }
-
-export default Footer;
