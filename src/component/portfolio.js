@@ -8,8 +8,8 @@ export default class Portfolio extends React.Component {
             dataImage: [ // dữ liệu ảnh
                 {
                     src: "img/product1.jpeg", // duong dan
-                    alt: "Project Title", // mo ta
-                    ProjectName: 'Project Name1', //ten du an
+                    alt: "Gemek Premium Thiên đường Bảo Sơn - Mr Dương", // mo ta
+                    ProjectName: 'Gemek Premium Thiên đường Bảo Sơn', //ten du an
                     classFilter: 'home'// phan loai
                 },
                 {
@@ -137,6 +137,12 @@ export default class Portfolio extends React.Component {
                     alt: "Project Title",
                     ProjectName: 'Project Name2',
                     classFilter: 'restaurant'
+                },
+                {
+                    src: "img/3d.jpg",
+                    alt: "Project Title",
+                    ProjectName: 'Project Name2',
+                    classFilter: 'home'
                 }
             ]
         }

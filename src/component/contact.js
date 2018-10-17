@@ -57,10 +57,10 @@ export default class Portfolio extends React.Component {
                             <p>Nguyễn Quảng,<br /> Trụ sở chính : Số 18 phố Nguyễn Lương Bằng, khu 8, Phường Việt Hoà, Thành phố Hải Dương, Tỉnh Hải Dương, Việt Nam</p>
                         </div>
                         <div className="contact-item"> <span>Email</span>
-                            <p>info@company.com</p>
+                            <p>viethaiconstruction@gmail.com</p>
                         </div>
                         <div className="contact-item"> <span>Đi Động</span>
-                            <p> 0973 481 556 hoặc 0934 540 128</p>
+                            <p> 0973 481 556 -- 0934 540 128 -- 0936 724 559</p>
                         </div>
                     </div>
                     <div className="col-md-8">

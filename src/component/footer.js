@@ -48,7 +48,7 @@ export default class Portfolio extends React.Component {
                 <div className="container text-center">
                     <div className="social">
                         <ul>
-                            <li><a href=""><i className="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.facebook.com/viet.hai.90663894"><i className="fa fa-facebook"></i></a></li>
                             <li><a href=""><i className="fa fa-twitter"></i></a></li>
                             <li><a href=""><i className="fa fa-google-plus"></i></a></li>
                             <li><a href=""><i className="fa fa-pinterest"></i></a></li>
