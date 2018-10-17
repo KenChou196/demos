@@ -139,7 +139,7 @@ export default class Portfolio extends React.Component {
                     classFilter: 'restaurant'
                 },
                 {
-                    src: "img/3d.jpg",
+                    src: "img/3D.jpg",
                     alt: "Project Title",
                     ProjectName: 'Project Name2',
                     classFilter: 'home'
